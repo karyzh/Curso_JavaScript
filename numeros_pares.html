@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA - CALCULAR LOS NUMEROS PARES DEL 1 AL 100</h1>
+
+<script>
+	
+	function saltarLinea() {
+
+		document.write("<br><br><br>");
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+var numero = parseInt(prompt("Introduzca el número: "));
+var par = 2;
+
+imprimir("Valor introducido: " + numero);
+while(par <= numero){
+
+	imprimir("<br>"+ par);
+	par+=2;
+
+}
+
+//IMPAR
+/*var contador = 0;
+while(contador <= 100) {
+	if(contador % 2 != 0){  //El "% o módulo" es para saber el residuo de cada división, dividido por un número. 
+		imprimir("<br>" + contador);
+		
+	} 
+	contador++; //Se pone dentro del while porque así incrementea el valor del número.
+}*/
+
+imprimir("<h2>FIN</h2>");
+
+
+//while(numero % 2 == 0){ //Mientras que el numero sea dividido entre dos y si sale el residuo 0, será par.
+
+//}
+</script>

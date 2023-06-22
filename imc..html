@@ -1,0 +1,69 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA CALCULAR IMC</h1>
+
+<script>
+	
+	function saltarLinea() {
+
+		document.write("<br><br><br>");
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+	//function calcularIMC(peso1,altura1,nombre1,peso2,altura2,nombre2)
+	function calcularIMC(peso,altura){  //funciones objetivas
+
+		//imc = peso / (altura * altura);
+		//imc1 = peso1 / (altura1 * altura1);
+		//imc2 = peso2 / (altura2 * altura2);
+		// imprimir("El promedio del IMC calculado de " + nombre1 + " y " + nombre2 + " es : " + Math.round (imc1+imc2)/2);
+		return (peso / (altura * altura));
+	}
+
+
+	//pesoKary = 68
+	//alturaKary = 1.56
+	//imcKary = pesoKary / (alturaKary * alturaKary)
+	//calcularIMC(pesoKary,alturaKary);
+	//imcKary = calcularIMC(68,1.56);
+	//imprimir("El IMC de Karyme es: " + Math.round (imcKary));
+	//calcularIMC(68,1.56, "Karyme"); //IMC KARYME
+
+
+	//var imcKaryme = calcularIMC(68,1.56);
+	//var imcJose = calcularIMC(70,1.78,);
+
+	//calcularIMC(68,1.56, "Karyme", 70,1.78, "Jose"); //Con los parametros juntos
+
+	//calcularIMC(60,1.70, "Irlanda", 55,1.60, "Julia");
+
+	//PROMPT es para interactuar con el usuario para ingresar los datos
+	nombre = prompt (" Informe su nombre ") //prompt es para interactuar con el usuario para ingresar los datos
+	pesoInformado = prompt (nombre + " Informe su peso ")
+	alturaInformado = prompt (nombre + " Informe su altura ")
+
+	imcCalculado = calcularIMC(pesoInformado,alturaInformado)
+
+	imprimir(nombre +  " ,su IMC calculado es : " + Math.round (imcCalculado));
+	
+
+	//imprimir("El promedio del IMC calculado de Karyme y Jose es : " + Math.round (imcKaryme+imcJose)/2);
+	
+	//imprimir("El promedio del IMC calculado de Irlanda y Julia es : " + Math.round (calcularIMC(65,1.78)+calcularIMC(55,1.60))/2);
+
+	//pesoJose = 70
+	//alturaJose = 1.78
+	//imcJose = pesoJose / (alturaJose * alturaJose)
+	//calcularIMC(pesoJose,alturaJose);
+	//imcJose = calcularIMC(pesoJose,alturaJose);
+	//imprimir("El IMC de Jose es: " + Math.round (imcJose));
+	//calcularIMC(70,1.78, "Jose"); //IMC JOSE 
+	
+
+
+</script>
